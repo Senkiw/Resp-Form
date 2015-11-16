@@ -5,7 +5,7 @@ body {
 }
 
 header {
-	text-align: left;
+	text-align: center;
 	font-size: 35px;
 	padding-bottom: 30px;
 	padding-top: 40px;
@@ -165,21 +165,21 @@ fieldset button{
 @media screen and (min-width: 900px) {
 
 	label{
-	text-align: right;
-	clear: both;
-	float: left;
-	margin-right: 15px;
-	display: inline-block;
-	}
+		text-align: right;
+		clear: both;
+		float: left;
+		margin-right: 15px;
+		display: inline-block;
+		}
 
 	.box1{
-	float:left;
-	display: inline-block;
-	width: 50%;
-	}
+		float:left;
+		display: inline-block;
+		width: 50%;
+		}
 
 	.form-title{
-	text-align: center;
-	display: inline-block;
-	}
+		text-align: center;
+		display: inline-block;
+		}
 }
