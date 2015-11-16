@@ -1,0 +1,185 @@
+
+body {
+	background-image: url("../images/ottawa.jpg");
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	text-align: left;
+	font-size: 35px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	font-weight: 400;
+	font-family: 'Bree Serif', serif;
+}
+
+.responsive-form{
+	max-width: 1000px;
+	width:100%;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	font: bold 14px;
+	text-align: center;
+}
+
+fieldset {
+	border: transparent;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: auto;
+	text-align: center;
+}
+
+fieldset .form-background {
+	width: 570px;
+	box-sizing: border-box;
+	background-color: rgba(178, 245, 255, 0.5);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+	padding: 60px 80px;
+	margin-bottom: 35px;	
+	border-radius: 20px;
+}
+
+fieldset .form-background .form-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+fieldset .box1{
+	text-align: left;
+	margin-bottom: 23px;
+}
+
+legend{
+	display: inline-block;
+	box-sizing: border-box;
+	color: #4c565e;
+	font-size: 24px;
+	padding:0 20px 15px;
+	border-bottom: 2px solid #2C747F;
+	margin: 0;
+	
+}
+
+fieldset .box1 > label{
+	color: #cccccc;
+	width: 50%;
+	text-align: left;
+	padding-right: 25px;
+	text-shadow: 2px 2px #2C747F;
+}
+
+input{
+	color:;
+	box-sizing: border-box;
+	width: 200px;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+	padding: 12px 18px;
+	border: 1px solid #dbdbdb;
+	text-align: left;
+}
+
+.label::after{
+	content: "";
+	display: inline-block;
+	width:0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #2C474F;
+	vertical-align: middle;
+}
+
+fieldset button{
+	display: block;
+	border-radius: 2px;
+	background-color: rgb(178, 245, 255);
+	color: #2C474F;
+	font-weight: bold;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.8);
+	padding: 15px 35px;
+	border: 0;
+	margin: 55px auto 0;
+	cursor: pointer;
+	width:50%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 300px) and (max-width:600px) {
+
+	fieldset{
+		margin: auto;
+	}
+
+	fieldset .form-background{
+		width: 300px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	fieldset .box1 > label{
+		visibility: hidden;
+	}
+
+	fieldset input{
+		display: block;
+		margin: 0 auto;
+	}
+
+	fieldset .form-title {
+		padding-bottom: 0;
+	}
+
+	body{
+		background-repeat: no-repeat;
+	}
+
+	header{
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+
+
+@media screen and (min-width: 601px) and (max-width:900px){
+
+	.form-background{
+		margin: 0 auto;
+	}
+
+	.box1{
+		float:left;
+		display: inline-block;
+		width: 50%;
+	}
+
+	.form-title{
+		text-align: center;
+		display: inline-block;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+
+	label{
+	text-align: right;
+	clear: both;
+	float: left;
+	margin-right: 15px;
+	display: inline-block;
+	}
+
+	.box1{
+	float:left;
+	display: inline-block;
+	width: 50%;
+	}
+
+	.form-title{
+	text-align: center;
+	display: inline-block;
+	}
+}
