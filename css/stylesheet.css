@@ -6,7 +6,7 @@ body {
 
 header {
 	text-align: center;
-	font-size: 35px;
+	font-size: 40px;
 	padding-bottom: 30px;
 	padding-top: 40px;
 	font-weight: 400;
@@ -155,6 +155,9 @@ fieldset button{
 		display: inline-block;
 	}
 
+	header{
+		font-size: 50px;
+	}
 }
 
 @media screen and (min-width: 900px) {
@@ -190,4 +193,7 @@ fieldset button{
 		vertical-align: middle;
 	}
 
+	header{
+		font-size: 60px;
+	}
 }
