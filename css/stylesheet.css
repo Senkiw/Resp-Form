@@ -72,7 +72,7 @@ fieldset .box1 > label{
 	text-shadow: 2px 2px #2C747F;
 }
 
-input{
+fieldset input{
 	color:;
 	box-sizing: border-box;
 	width: 200px;
@@ -108,6 +108,7 @@ fieldset button{
 		width: 300px;
 		padding-left: 35px;
 		padding-right: 35px;
+
 	}
 
 	fieldset .box1 > label{
@@ -140,17 +141,17 @@ fieldset button{
 
 @media screen and (min-width: 600px) and (max-width:900px){
 
-	.form-background{
+	fieldset .form-background{
 		margin: 0 auto;
 	}
 
-	.box1{
+	fieldset .box1{
 		float:left;
 		display: inline-block;
 		width: 50%;
 	}
 
-	.form-title{
+	fieldset .form-background .form-title{
 		text-align: center;
 		display: inline-block;
 	}
@@ -162,38 +163,45 @@ fieldset button{
 
 @media screen and (min-width: 900px) {
 
-	
-	.form-row{
-		moz-column-count:2;
-		display: inline-block;
-	}
-
-	legend{
-		float:left;	
-	}
-
-	.box1{
-		float:right;
-		
-	}
-
-	.form-title{
-		text-align: center;
-		display: inline-block;
-	}
-
-	label::after{
-		content: " ";
-		display: inline-block;
-		width:0;
-		height: 0;
-		border-top: 5px solid transparent;
-		border-bottom: 5px solid transparent;
-		border-left: 5px solid #2C474F;
-		vertical-align: middle;
-	}
-
 	header{
 		font-size: 60px;
 	}
+
+	fieldset .box1{
+		float: left;
+		display: inline-block;
+		width:50%;
+		text-align: left;
+	}
+
+	fieldset input{
+		float: right;
+		display: inline-block;
+		width: 75%;
+	}
+	
+	fieldset .box1 > label{
+		float: left;
+		display: inline-block;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	fieldset .form-row{
+		display: inline-block;
+	}
+
+	fieldset .form-background{
+		padding-left: 0;
+		padding-right: 0; 
+		margin: 0 auto;
+	}
+
+	fieldset .form-background .form-title{
+		display: inline-block;
+		text-align: center;
+		
+
+	}
+
 }
